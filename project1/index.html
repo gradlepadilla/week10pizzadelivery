@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo App</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class="container">
+    <br>
+    <div class="card">
+       <div class="card-body">
+        <div class="row">
+            <div class="col-sm">
+                <div class="form-group">
+                    <label for="new-start-date"> Pizza Delivery Date </label>
+                    <input type="date" class="form-control" id="new-start-date">
+
+                </div>
+            </div>
+
+            <div class="col-sm">
+                  <div class="form-group">
+                    <label for="new-end-date"> Time Needed By </label>
+                    <input type="time" class="form-control" id="new-end-date">
+                    
+                </div>
+            </div>
+        </div class="row">
+            <div class="col-sm">
+                <div class="form-group">
+                    <label for="new-task"> Insert Pizza Order Here </label>
+                    <input type="text" class="form-control" id="new-task" placeholder="Ex: Large Cheese Pizza, Thin Crust">
+
+                    
+                </div>
+            </div>
+            
+        <div>
+            <div>
+                <button id="add" class="btn btn-primary from-control"> Order Up! </button>
+            </div>
+
+        </div>
+       </div>
+    </div>
+
+    <table id="list" class="table table-dark table-striped">
+
+        <tr>
+            <th> Pizza </th>
+            <th> Date Created </th>
+            <th> Start Date </th>
+            <th> Due Date </th>
+            <th> Actions </th>
+        </tr>
+    </table>
+
+    </div>
+    <br>
+
+  
+
+    <div class="card">
+        <div class="card-body">
+        <div class="row">
+        <div class="col-sm">
+        <div class="form-group">
+            <label for="new-pizza-name"> Name on Order </label>
+            <input type="text" class="form-control" id="new-pizza-name">
+
+        </input>
+        </div>
+        </div>
+        </div>
+        </div>
+        <button id="new pizza" class="btn btn-primary for-control"> Create </button>
+    </div>
+    
+    
+   
+
+    
+    <script src="todo.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
